@@ -1,0 +1,682 @@
+{
+    "movies": {
+        "easy": [
+            {
+                "word": "avatar",
+                "hint": "A James Cameron sci-fi movie"
+            },
+            {
+                "word": "frozen",
+                "hint": "Disney movie with Elsa"
+            },
+            {
+                "word": "jaws",
+                "hint": "A movie about a killer shark"
+            },
+            {
+                "word": "shrek",
+                "hint": "A green ogre's adventure"
+            },
+            {
+                "word": "coco",
+                "hint": "A Pixar movie about the afterlife"
+            }
+        ],
+        "medium": [
+            {
+                "word": "titanic",
+                "hint": "A tragic love story on a ship"
+            },
+            {
+                "word": "inception",
+                "hint": "A mind-bending dream movie"
+            },
+            {
+                "word": "interstellar",
+                "hint": "A movie about space travel"
+            },
+            {
+                "word": "gladiator",
+                "hint": "A Roman warrior seeks revenge"
+            },
+            {
+                "word": "ratatouille",
+                "hint": "A movie about a cooking rat"
+            }
+        ],
+        "hard": [
+            {
+                "word": "schindler",
+                "hint": "A historical movie about the Holocaust"
+            },
+            {
+                "word": "godfather",
+                "hint": "A famous mafia movie"
+            },
+            {
+                "word": "amelie",
+                "hint": "A French romantic comedy"
+            },
+            {
+                "word": "casablanca",
+                "hint": "A classic WWII-era romance"
+            },
+            {
+                "word": "whiplash",
+                "hint": "A movie about a determined drummer"
+            }
+        ]
+    },
+    "football": {
+        "easy": [
+            {
+                "word": "goal",
+                "hint": "A score in football"
+            },
+            {
+                "word": "kick",
+                "hint": "To strike the ball"
+            },
+            {
+                "word": "ball",
+                "hint": "A round object used in football"
+            },
+            {
+                "word": "team",
+                "hint": "Group of players in a football match"
+            },
+            {
+                "word": "pass",
+                "hint": "To send the ball to another player"
+            }
+        ],
+        "medium": [
+            {
+                "word": "penalty",
+                "hint": "A kick taken after a foul in the box"
+            },
+            {
+                "word": "goalkeeper",
+                "hint": "The player who guards the goal"
+            },
+            {
+                "word": "midfielder",
+                "hint": "A player who controls the center of the field"
+            },
+            {
+                "word": "striker",
+                "hint": "A player focused on scoring goals"
+            },
+            {
+                "word": "referee",
+                "hint": "An official who manages the game"
+            }
+        ],
+        "hard": [
+            {
+                "word": "offside",
+                "hint": "A position where a player is closer to the opponent's goal than the ball"
+            },
+            {
+                "word": "counterattack",
+                "hint": "A quick attack after defending"
+            },
+            {
+                "word": "sweeper",
+                "hint": "A defensive player behind the defenders"
+            },
+            {
+                "word": "formations",
+                "hint": "The arrangement of players on the field"
+            },
+            {
+                "word": "playmaker",
+                "hint": "A player who creates scoring opportunities"
+            }
+        ]
+    },
+    "math": {
+        "easy": [
+            {
+                "word": "sum",
+                "hint": "The result of adding numbers"
+            },
+            {
+                "word": "add",
+                "hint": "To combine numbers together"
+            },
+            {
+                "word": "minus",
+                "hint": "To subtract numbers"
+            },
+            {
+                "word": "divide",
+                "hint": "To split a number into equal parts"
+            },
+            {
+                "word": "equal",
+                "hint": "Indicates that two values are the same"
+            }
+        ],
+        "medium": [
+            {
+                "word": "algebra",
+                "hint": "A branch of mathematics dealing with symbols and equations"
+            },
+            {
+                "word": "calculus",
+                "hint": "A branch of mathematics dealing with change"
+            },
+            {
+                "word": "geometry",
+                "hint": "The study of shapes and sizes"
+            },
+            {
+                "word": "percent",
+                "hint": "A part per hundred"
+            },
+            {
+                "word": "equation",
+                "hint": "A statement that two expressions are equal"
+            }
+        ],
+        "hard": [
+            {
+                "word": "trigonometry",
+                "hint": "A branch of mathematics dealing with angles and triangles"
+            },
+            {
+                "word": "differentiation",
+                "hint": "A process in calculus to find the rate of change"
+            },
+            {
+                "word": "integration",
+                "hint": "A process in calculus to find the area under a curve"
+            },
+            {
+                "word": "logarithm",
+                "hint": "The inverse of exponentiation"
+            },
+            {
+                "word": "quadratic",
+                "hint": "A polynomial equation of degree 2"
+            }
+        ]
+    },
+    "science": {
+        "easy": [
+            {
+                "word": "atom",
+                "hint": "The basic unit of matter"
+            },
+            {
+                "word": "cell",
+                "hint": "The basic unit of life"
+            },
+            {
+                "word": "sun",
+                "hint": "The star at the center of our solar system"
+            },
+            {
+                "word": "star",
+                "hint": "A luminous celestial body"
+            },
+            {
+                "word": "plant",
+                "hint": "A living organism that uses sunlight for photosynthesis"
+            }
+        ],
+        "medium": [
+            {
+                "word": "gravity",
+                "hint": "The force that attracts objects toward the earth"
+            },
+            {
+                "word": "photosynthesis",
+                "hint": "The process by which plants make food using sunlight"
+            },
+            {
+                "word": "molecule",
+                "hint": "A group of atoms bonded together"
+            },
+            {
+                "word": "telescope",
+                "hint": "An instrument for viewing distant objects"
+            },
+            {
+                "word": "neutron",
+                "hint": "A subatomic particle with no electric charge"
+            }
+        ],
+        "hard": [
+            {
+                "word": "thermodynamics",
+                "hint": "The study of heat and energy transfer"
+            },
+            {
+                "word": "electromagnetism",
+                "hint": "The interaction of electric fields and magnetic fields"
+            },
+            {
+                "word": "metamorphosis",
+                "hint": "The transformation of an organism from one form to another"
+            },
+            {
+                "word": "chlorophyll",
+                "hint": "The green pigment in plants that aids in photosynthesis"
+            },
+            {
+                "word": "biochemistry",
+                "hint": "The study of the chemical processes within living organisms"
+            }
+        ]
+    },
+    "history": {
+        "easy": [
+            {
+                "word": "king",
+                "hint": "A male ruler of a country or territory"
+            },
+            {
+                "word": "war",
+                "hint": "A conflict between countries or groups"
+            },
+            {
+                "word": "past",
+                "hint": "The time before the present"
+            },
+            {
+                "word": "empire",
+                "hint": "A large political unit typically controlled by a single ruler"
+            },
+            {
+                "word": "crown",
+                "hint": "A symbol of monarchy or royalty"
+            }
+        ],
+        "medium": [
+            {
+                "word": "renaissance",
+                "hint": "A period of great cultural and artistic growth in Europe"
+            },
+            {
+                "word": "revolution",
+                "hint": "A forceful overthrow of a government or social order"
+            },
+            {
+                "word": "dynasty",
+                "hint": "A series of rulers from the same family"
+            },
+            {
+                "word": "medieval",
+                "hint": "Relating to the Middle Ages"
+            },
+            {
+                "word": "colony",
+                "hint": "A territory governed by a foreign power"
+            }
+        ],
+        "hard": [
+            {
+                "word": "napoleon",
+                "hint": "A French military leader who rose to prominence during the French Revolution"
+            },
+            {
+                "word": "byzantine",
+                "hint": "Relating to the Eastern Roman Empire"
+            },
+            {
+                "word": "industrialization",
+                "hint": "The development of industries on a wide scale"
+            },
+            {
+                "word": "feudalism",
+                "hint": "A system of government based on land ownership and loyalty"
+            },
+            {
+                "word": "monarchy",
+                "hint": "A form of government with a monarch at the head"
+            }
+        ]
+    },
+    "geography": {
+        "easy": [
+            {
+                "word": "river",
+                "hint": "A large natural stream of water"
+            },
+            {
+                "word": "lake",
+                "hint": "A large body of water surrounded by land"
+            },
+            {
+                "word": "island",
+                "hint": "A piece of land surrounded by water"
+            },
+            {
+                "word": "mountain",
+                "hint": "A large steep hill"
+            },
+            {
+                "word": "ocean",
+                "hint": "A vast body of saltwater"
+            }
+        ],
+        "medium": [
+            {
+                "word": "continent",
+                "hint": "A large landmass"
+            },
+            {
+                "word": "desert",
+                "hint": "A dry barren area of land"
+            },
+            {
+                "word": "rainforest",
+                "hint": "A dense tropical forest with heavy rainfall"
+            },
+            {
+                "word": "volcano",
+                "hint": "A mountain that erupts with lava"
+            },
+            {
+                "word": "tundra",
+                "hint": "A cold, treeless region"
+            }
+        ],
+        "hard": [
+            {
+                "word": "archipelago",
+                "hint": "A group of islands"
+            },
+            {
+                "word": "cartography",
+                "hint": "The science of mapmaking"
+            },
+            {
+                "word": "fjord",
+                "hint": "A narrow inlet of the sea between cliffs"
+            },
+            {
+                "word": "savanna",
+                "hint": "A grassy plain with few trees"
+            },
+            {
+                "word": "hemisphere",
+                "hint": "Half of the Earth divided by the equator"
+            }
+        ]
+    },
+    "music": {
+        "easy": [
+            {
+                "word": "song",
+                "hint": "A piece of music with lyrics"
+            },
+            {
+                "word": "beat",
+                "hint": "The rhythmic pulse in music"
+            },
+            {
+                "word": "drum",
+                "hint": "A percussion instrument"
+            },
+            {
+                "word": "flute",
+                "hint": "A woodwind instrument"
+            },
+            {
+                "word": "note",
+                "hint": "A musical sound"
+            }
+        ],
+        "medium": [
+            {
+                "word": "guitar",
+                "hint": "A string instrument with six strings"
+            },
+            {
+                "word": "piano",
+                "hint": "A large musical instrument with keys"
+            },
+            {
+                "word": "orchestra",
+                "hint": "A large group of musicians"
+            },
+            {
+                "word": "symphony",
+                "hint": "A large-scale musical composition"
+            },
+            {
+                "word": "melody",
+                "hint": "A sequence of notes forming a tune"
+            }
+        ],
+        "hard": [
+            {
+                "word": "crescendo",
+                "hint": "A gradual increase in volume"
+            },
+            {
+                "word": "counterpoint",
+                "hint": "The combination of different musical lines"
+            },
+            {
+                "word": "polyphony",
+                "hint": "Multiple simultaneous independent melodies"
+            },
+            {
+                "word": "oratorio",
+                "hint": "A large-scale musical work with a narrative"
+            },
+            {
+                "word": "syncopation",
+                "hint": "A disturbance or interruption of the regular flow of rhythm"
+            }
+        ]
+    },
+    "food": {
+        "easy": [
+            {
+                "word": "bread",
+                "hint": "A staple food made from flour"
+            },
+            {
+                "word": "pizza",
+                "hint": "A dish with a crust, sauce, and toppings"
+            },
+            {
+                "word": "pasta",
+                "hint": "A type of Italian food made from dough"
+            },
+            {
+                "word": "soup",
+                "hint": "A liquid dish typically made by boiling vegetables"
+            },
+            {
+                "word": "burger",
+                "hint": "A sandwich consisting of a patty of ground meat"
+            }
+        ],
+        "medium": [
+            {
+                "word": "lasagna",
+                "hint": "A layered pasta dish with cheese and meat"
+            },
+            {
+                "word": "sushi",
+                "hint": "A Japanese dish consisting of vinegared rice"
+            },
+            {
+                "word": "tacos",
+                "hint": "A Mexican dish with a folded tortilla and fillings"
+            },
+            {
+                "word": "curry",
+                "hint": "A spicy dish with sauce and meat or vegetables"
+            },
+            {
+                "word": "paella",
+                "hint": "A Spanish rice dish with seafood and vegetables"
+            }
+        ],
+        "hard": [
+            {
+                "word": "quiche",
+                "hint": "A savory tart filled with eggs, cheese, and vegetables"
+            },
+            {
+                "word": "tiramisu",
+                "hint": "An Italian dessert with layers of coffee-soaked biscuits"
+            },
+            {
+                "word": "fondue",
+                "hint": "A dish where food is dipped into melted cheese or chocolate"
+            },
+            {
+                "word": "bouillabaisse",
+                "hint": "A French seafood stew"
+            },
+            {
+                "word": "ramen",
+                "hint": "A Japanese noodle dish typically served in broth"
+            }
+        ]
+    },
+    "technology": {
+        "easy": [
+            {
+                "word": "phone",
+                "hint": "A device used for communication"
+            },
+            {
+                "word": "computer",
+                "hint": "An electronic device for storing and processing data"
+            },
+            {
+                "word": "keyboard",
+                "hint": "A device for typing text into a computer"
+            },
+            {
+                "word": "mouse",
+                "hint": "A pointing device used to interact with a computer"
+            },
+            {
+                "word": "tablet",
+                "hint": "A portable touchscreen device"
+            }
+        ],
+        "medium": [
+            {
+                "word": "software",
+                "hint": "Programs used by a computer to perform tasks"
+            },
+            {
+                "word": "website",
+                "hint": "A set of web pages accessible over the internet"
+            },
+            {
+                "word": "cloud",
+                "hint": "A system for storing and accessing data remotely"
+            },
+            {
+                "word": "virus",
+                "hint": "Malicious software that can harm a computer"
+            },
+            {
+                "word": "network",
+                "hint": "A system of interconnected computers"
+            }
+        ],
+        "hard": [
+            {
+                "word": "cryptography",
+                "hint": "The practice of securing communication through codes"
+            },
+            {
+                "word": "algorithm",
+                "hint": "A set of instructions to perform a task or solve a problem"
+            },
+            {
+                "word": "blockchain",
+                "hint": "A decentralized digital ledger"
+            },
+            {
+                "word": "quantum",
+                "hint": "A field of computing based on quantum mechanics"
+            },
+            {
+                "word": "virtualization",
+                "hint": "The creation of virtual versions of computer resources"
+            }
+        ]
+    },
+    "animals": {
+        "easy": [
+            {
+                "word": "dog",
+                "hint": "A common domestic pet"
+            },
+            {
+                "word": "cat",
+                "hint": "A popular pet with nine lives"
+            },
+            {
+                "word": "fish",
+                "hint": "An aquatic animal with gills"
+            },
+            {
+                "word": "bird",
+                "hint": "An animal that can fly and has feathers"
+            },
+            {
+                "word": "cow",
+                "hint": "A large mammal that provides milk"
+            }
+        ],
+        "medium": [
+            {
+                "word": "dolphin",
+                "hint": "A highly intelligent aquatic mammal"
+            },
+            {
+                "word": "giraffe",
+                "hint": "A tall mammal with a long neck"
+            },
+            {
+                "word": "kangaroo",
+                "hint": "A marsupial from Australia that hops"
+            },
+            {
+                "word": "penguin",
+                "hint": "A flightless bird that lives in cold regions"
+            },
+            {
+                "word": "crocodile",
+                "hint": "A large reptile that lives in water"
+            }
+        ],
+        "hard": [
+            {
+                "word": "axolotl",
+                "hint": "A Mexican salamander known for its regenerative abilities"
+            },
+            {
+                "word": "aardvark",
+                "hint": "A nocturnal mammal with a long snout"
+            },
+            {
+                "word": "platypus",
+                "hint": "A unique mammal that lays eggs"
+            },
+            {
+                "word": "chameleon",
+                "hint": "A reptile known for changing color"
+            },
+            {
+                "word": "orangutan",
+                "hint": "A great ape native to Southeast Asia"
+            }
+        ]
+    }
+}
