@@ -1,0 +1,18 @@
+.checkerboard-bg {
+  position: relative;
+  background-image: repeating-conic-gradient(#d1d1d1 0% 25%, #9b9b9b 25% 50%);
+  background-size: 250px 250px;
+}
+
+.checkerboard-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom right,
+    rgba(21, 128, 61, 0.4),
+    rgba(12, 74, 110, 0.4)
+  );
+  z-index: 0;
+  pointer-events: none;
+}
