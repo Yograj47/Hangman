@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import NotFoundScreen from "./screens/PageNotFound";
 import HowToPlayScreen from "./screens/HowToPlay";
 import CategoryScreen from "./screens/CategorySelection";
+import GamePlayScreen from "./screens/GamePlay";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<HomeScreen />} />
         <Route path="/howtoplay" element={<HowToPlayScreen />} />
         <Route path="/category" element={<CategoryScreen />} />
+        <Route path="/game" element={<GamePlayScreen />} />
         <Route path="*" element={<NotFoundScreen />} />
       </Routes>
     </div>

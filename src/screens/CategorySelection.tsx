@@ -3,66 +3,57 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import categoriesData from "../data/categories.json";
+import useGameStore from "@/context/GameContext";
+import type { Difficulty } from "@/types/game";
 
-// Define the shape of the data for better type safety
-type Difficulty = "easy" | "medium" | "hard";
-
-/**
- * A screen for selecting a game category and difficulty.
- * It dynamically loads categories from a JSON file.
- */
 export default function CategoryScreen() {
+    const { category, setCategory, setDifficulty, reset } = useGameStore();
     const navigate = useNavigate();
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [categories, setCategories] = useState<string[]>([]);
 
-    // Dynamically load categories from the JSON data
+    // Get's Category Data
     useEffect(() => {
         if (categoriesData) {
             setCategories(Object.keys(categoriesData));
         }
     }, []);
 
-    // Function to handle category selection
-    const handleCategorySelect = (category: string) => {
-        setSelectedCategory(category);
-    };
-
-    // Function to handle difficulty selection
     const handleDifficultySelect = (difficulty: Difficulty) => {
-        if (selectedCategory) {
-            // Navigate to the game screen with the selected category and difficulty
-            navigate(`/game/${selectedCategory}/${difficulty}`);
-        }
+        setDifficulty(difficulty);
+        navigate("/game");
     };
 
     return (
         <div className="h-screen w-full flex justify-center items-center p-4">
             <Card className="w-full max-w-md rounded-3xl bg-slate-900/60 backdrop-blur-lg border border-green-700 shadow-xl shadow-green-950/50">
                 <CardContent className="flex flex-col items-center text-center p-10 gap-8">
-                    {/* Title and instructions */}
+                    {/* Title */}
                     <h1 className="text-4xl font-extrabold tracking-wider text-green-400 drop-shadow-[0_0_8px_rgba(34,197,94,0.8)]">
-                        {selectedCategory ? "Select Difficulty" : "Select a Category"}
+                        {category ? "Select Difficulty" : "Select a Category"}
                     </h1>
 
                     {/* Category Selection */}
-                    {!selectedCategory && (
+                    {!category && (
                         <div className="grid grid-cols-2 gap-4 w-full">
-                            {categories.map((category) => (
+                            {categories.map((cat) => (
                                 <Button
-                                    key={category}
+                                    key={cat}
                                     className="h-14 bg-green-600/20 hover:bg-green-700/40 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
-                                    onClick={() => handleCategorySelect(category)}
+                                    onClick={() => setCategory(cat)}
                                 >
-                                    {category.charAt(0).toUpperCase() + category.slice(1)}
+                                    {cat.charAt(0).toUpperCase() + cat.slice(1)}
                                 </Button>
                             ))}
                         </div>
                     )}
 
                     {/* Difficulty Selection */}
-                    {selectedCategory && (
+                    {category && (
                         <div className="flex flex-col gap-4 w-full">
+                            <h2 className="text-2xl font-semibold text-green-300 mb-2">
+                                Category: <span className="capitalize">{category}</span>
+                            </h2>
+
                             <Button
                                 className="w-full h-14 bg-gradient-to-br from-green-600 to-green-800 text-white font-bold text-xl rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-green-500/50"
                                 onClick={() => handleDifficultySelect("easy")}
@@ -81,6 +72,15 @@ export default function CategoryScreen() {
                             >
                                 Hard
                             </Button>
+
+                            {/* Back to categories button */}
+                            <Button
+                                variant="outline"
+                                className="w-full h-14 border-2 border-zinc-600 text-slate-400 font-bold text-lg rounded-full transition-all duration-300 hover:bg-green-950/20 hover:text-zinc-300"
+                                onClick={reset}
+                            >
+                                ← Back to Categories
+                            </Button>
                         </div>
                     )}
 
@@ -88,7 +88,10 @@ export default function CategoryScreen() {
                     <Button
                         variant="outline"
                         className="w-full h-14 border-2 border-green-600 text-green-400 font-bold text-lg rounded-full transition-all duration-300 transform hover:bg-green-950/20 hover:text-green-300"
-                        onClick={() => navigate("/")}
+                        onClick={() => {
+                            navigate("/");
+                            reset();
+                        }}
                     >
                         Back to Home
                     </Button>
