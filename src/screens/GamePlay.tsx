@@ -2,6 +2,7 @@ import HangmanDrawing from "@/components/HangmanDrawing";
 import Keyboard from "@/components/Keyboard";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import WordDisplay from "@/components/WordDisplay";
 import useGameStore from "@/context/GameContext";
 import { Home, RefreshCcw } from "lucide-react";
 
@@ -20,15 +21,7 @@ export default function GamePlayScreen() {
                         </div>
 
                         {/* Word */}
-                        <div className="flex gap-3 text-3xl font-mono tracking-widest text-green-400 drop-shadow-[0_0_6px_rgba(34,197,94,0.7)]">
-                            {/* Example letters */}
-                            <span>T</span>
-                            <span>E</span>
-                            <span>S</span>
-                            <span>T</span>
-                            <span>E</span>
-                            <span>R</span>
-                        </div>
+                        <WordDisplay category={category} difficulty={difficulty} />
 
                         {/* Keyboard Grid */}
                         <div className="mt-6 w-full flex justify-center">

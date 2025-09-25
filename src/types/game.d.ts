@@ -7,3 +7,17 @@ export interface CategoryStore {
     setDifficulty: (difficulty) => void;
     reset: () => void
 }
+
+export type WordData = {
+    words: string;
+    hints: string;
+}
+
+export type DifficultyCategory = {
+    [K in Difficulty]: WordData[];
+}
+
+export type GameData = {
+    [category: string]: DifficultyCategory;
+}
+

@@ -1,28 +1,26 @@
-import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import categoriesData from "../data/categories.json";
 import useGameStore from "@/context/GameContext";
 import type { Difficulty } from "@/types/game";
+import { Loader } from "lucide-react";
+import { useGameData } from "@/context/DataContext";
 
 export default function CategoryScreen() {
     const { category, setCategory, setDifficulty, reset } = useGameStore();
     const navigate = useNavigate();
-    const [categories, setCategories] = useState<string[]>([]);
-
-    // Get's Category Data
-    useEffect(() => {
-        if (categoriesData) {
-            setCategories(Object.keys(categoriesData));
-        }
-    }, []);
+    const { data, loading } = useGameData();
 
     const handleDifficultySelect = (difficulty: Difficulty) => {
         setDifficulty(difficulty);
         navigate("/game");
     };
 
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
     return (
         <div className="h-screen w-full flex justify-center items-center p-4">
             <Card className="w-full max-w-md rounded-3xl bg-slate-900/60 backdrop-blur-lg border border-green-700 shadow-xl shadow-green-950/50">
@@ -35,13 +33,13 @@ export default function CategoryScreen() {
                     {/* Category Selection */}
                     {!category && (
                         <div className="grid grid-cols-2 gap-4 w-full">
-                            {categories.map((cat) => (
+                            {data && Object.keys(data).map((k) => (
                                 <Button
-                                    key={cat}
+                                    key={k}
                                     className="h-14 bg-green-600/20 hover:bg-green-700/40 text-white font-bold text-lg transition-all duration-300 transform hover:scale-105"
-                                    onClick={() => setCategory(cat)}
+                                    onClick={() => setCategory(k)}
                                 >
-                                    {cat.charAt(0).toUpperCase() + cat.slice(1)}
+                                    {k.charAt(0).toUpperCase() + k.slice(1)}
                                 </Button>
                             ))}
                         </div>

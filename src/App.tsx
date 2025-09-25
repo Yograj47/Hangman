@@ -5,8 +5,14 @@ import NotFoundScreen from "./screens/PageNotFound";
 import HowToPlayScreen from "./screens/HowToPlay";
 import CategoryScreen from "./screens/CategorySelection";
 import GamePlayScreen from "./screens/GamePlay";
+import { useGameData } from "./context/DataContext";
 
 function App() {
+  const { data, loading } = useGameData();
+  if (loading) {
+    return <div className="h-screen w-full flex justify-center items-center p-4 text-white text-2xl">Loading...</div>
+  }
+
   return (
     <div className="min-h-screen w-full text-white checkerboard-bg">
       <Routes>
